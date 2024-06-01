@@ -1,6 +1,6 @@
 const NFTinfo=[];
 let count=0;
-
+let i=0;
 
 
 function mintNFT (n,wi,ti,dob)
@@ -16,14 +16,14 @@ function mintNFT (n,wi,ti,dob)
 
 function listnfts()
 {
-for(let i=0; i < NFTinfo.length ; i++)
+while( i < NFTinfo.length)
   {
     console.log("\n"+"NFT with ID: "+ NFTinfo[i].Work_Id);
     console.log("---------------------------------------")
     console.log("Name: " + NFTinfo[i].Name );
     console.log("Date Of Birth: " + NFTinfo[i].DOB);
     console.log("Transaction ID: " + NFTinfo[i].Transaction_Id);
-   
+    i++;
 
   }
 }
